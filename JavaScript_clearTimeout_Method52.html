@@ -1,0 +1,24 @@
+<html >
+<head>
+    <title>ClearTimeOut Method</title>
+</head>
+<body>
+    <h1 id="a3"></h1>
+    <button onclick="start()">start</button>
+    <button onclick="stop()">stop</button>
+    
+</body>
+<script type="text/javascript">
+    //clearTimeout method clear the timer set with the setTimeout() method-->stop fxn peform of setTimeout
+    var abc;
+     function start(){
+        alert("TimeOut Started");
+         abc=setTimeout(function(){document.getElementById("a3").innerHTML="WsCubeTech";},5000);
+        
+     }
+     function stop(){
+      clearTimeout(abc);
+      alert("TimeOut Stopped");
+     }
+</script>
+</html>

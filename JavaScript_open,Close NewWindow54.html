@@ -1,0 +1,23 @@
+<html >
+<head>
+    <title></title>
+    <title>Open,Close New Window</title>
+</head>
+<body>
+    <button onclick="newWindow()">Open wscubetech
+    </button>
+    <button onclick="closeWindow()">Close wscubetech</button>
+</body>
+<script>
+    var win;
+    function newWindow(){
+        win = window.open("https://www.wscubetech.com/", "_blank", "width=500px,height=500px");
+        //you can open multiple windows in single function
+
+    }
+    function closeWindow(){
+        win.close();//close not works for every website due to security restrictions e.g gemini
+    }
+
+</script>
+</html>

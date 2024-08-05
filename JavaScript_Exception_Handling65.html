@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Exception Handling</title>
+</head>
+
+<body>
+    <label>Enter Age:</label>
+    <input type="text" id="myInput" />
+    <br />
+    <br />
+    <button onclick="test()">Click Me</button>
+    <h2 style="color: blue;">Note:Age Must Be Greater   18</h2>
+    <h2></h2>
+
+
+</body>
+<script>
+    function test() {
+        try {
+            var x = document.getElementById("myInput").value;
+            if (isNaN(x)) {
+                throw "Please Enter A Number";
+            }
+            else {
+                if (x <= 18) {
+                    throw "You are not eligible to vote";
+                }
+                else {
+                    throw "";
+                }
+            }
+        }
+        catch (err) {
+            document.getElementsByTagName("h2")[1].innerHTML = err;
+            document.getElementsByTagName("h2")[1].style.color = "red";
+        }
+        finally{
+            document.getElementById("myInput").value="";
+        }
+    }
+
+</script>
+
+</html>

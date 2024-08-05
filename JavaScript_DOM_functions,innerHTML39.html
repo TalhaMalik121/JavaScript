@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>
+            DOM Functions
+        </title>
+    </head>
+    <body>
+        <h2>0</h2>
+        <div class="main">
+           <h1>Welcome To WsCube Tech</h1> 
+        </div>
+        <h2>1</h2>
+        <div class="main">
+            <h1>My name is talha</h1> 
+         </div>
+        
+    </body>
+    <script type="text/JavaScript">
+        /*Data Retrieve By Id---->
+         var x=document.getElementById("main");
+         var y=document.getElementById("main").innerHTML;
+         console.log(y);
+         console.log(x);*/
+
+         //Data Insert To InnerHTML--->
+         //document.getElementById("main").innerHTML="<h2>My name is talha</h2>";
+
+         
+         /*Data retrieve Using ClassName--->
+         var x=document.getElementsByClassName("main");
+         console.log(x);
+         var y=document.getElementsByClassName("main")[0].innerHTML;
+         alert(y);
+         var z=document.getElementsByClassName("main")[1].innerHTML;
+         alert(z);*/
+
+         //Data Insert Using ClassName--->
+          document.getElementsByClassName("main")[0].innerHTML="<h1>My name is talha</h1> ";
+          //changing 0th keeper
+         document.getElementsByClassName("main")[1].innerHTML="<h1>Welcome To WsCube Tech</h1> ";
+         //changing 1st keeper
+        
+    </script>
+</html>

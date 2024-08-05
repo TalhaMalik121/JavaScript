@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>
+            Arrays in JavaScript
+        </title>
+    </head>
+    <body>
+
+    </body>
+    <script type="text/JavaScript">
+        //Method 1
+        document.write("<h2>Method 1</h2>");
+        var myArray = new Array("Hello","World","JavaScript","is","fun!",11);
+        //myArray[0] = "Hello";
+        //myArray[1] = "World";
+        //myArray[2] = "JavaScript";
+        //myArray[3] = "is";
+        //myArray[4] = "fun!";
+        for(var i=0;i<6;i++){
+            document.write(myArray[i]+"<br/>");
+        }
+        document.write("<br/><h2>Method 2</h2>");
+        // document.write(myArray[0]+"<br/>");
+        // document.write(myArray[1]+"<br/>");
+        //document.write(myArray[2]+"<br/>");
+        //document.write(myArray[3]+"<br/>");
+        //document.write(myArray[4]+"<br/>");
+
+        //method 2
+        var array=[];
+        array=["Hello","World","JavaScript","is","fun!",11];//-->cannot declare and initilize at same time
+        //array[0]="Hello";
+        //array[1]="World";
+        //array[2]="JavaScript";
+        //array[3]="is";
+        //array[4]="fun!";
+        //array[5]=11;
+        // document.write(array[0]+"<br/>");
+        //document.write(array[1]+"<br/>");
+        //document.write(array[2]+"<br/>");
+        //document.write(array[3]+"<br/>");
+        //document.write(array[4]+"<br/>");
+
+        //for loop
+        document.write("<h2>For Loop<h2/>");
+        for(var i=0;i<6;i++){
+            if(i==4){
+                continue;
+            }
+            document.write(i+"<br/>");
+        }
+         
+        //while loop
+        document.write("<h2>While Loop<h2/>");
+         var i=0;
+        while(i<10){
+            if(i==7){
+                break;
+            }
+            document.write(i+"<br/>");
+            i++;
+        }
+
+        //For-Each loop--->used to retreive data from objects/arrays
+        document.write("<h2>For-Each Loop</h2>");
+        var cars=["car1","car2","car3"];
+
+        cars.forEach(carss);
+        function carss(item,index,array) { //this loop adds something at everything  item 
+            
+            array[index]=item+" Lambo"+(index+1);
+            
+        }
+        cars.forEach(car);//this for-Each loop calls every time a function given in its argument
+
+        function car(item,index,array) {  //array means full array
+             document.write("index="+index+"-->"+item+"<br/>");
+            
+        }
+
+        document.write("<h2>Switch Statement<h2/>");
+        let k=1;
+        switch (k) {
+            case 0:
+            document.write("k is 0");
+                break;
+            case 1:
+            document.write("k is 1"); 
+                break;
+            case 2:
+            document.write("k is 2");
+                break;
+            case 3:
+            document.write("k is 3");    
+                break;
+            default:
+            document.write("k is greater than 3 or less than zero or not an integer");
+                break;
+        }
+
+    </script>
+</html>

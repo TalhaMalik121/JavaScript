@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>Event Listener</title>
+</head>
+<style>
+    #coun{
+        font-size: 50px;
+    }
+</style>
+<body>
+    <div id="coun" ></div>
+    <button id="btn">Click Me</button>
+    <button id="res">reset</button>
+    <button onclick="stop()">FreezeCounter</button>
+    
+</body>
+<script>
+    var c=0;
+    //event 1
+    document.getElementById("btn").addEventListener("click",counter);
+    function counter(){
+        document.getElementById("coun").innerText=c;
+        c++;
+    }
+    //event 2
+    document.getElementById("btn").addEventListener("mouseenter",ColorChange);
+    function ColorChange(){
+        document.getElementById("coun").style.color="red";
+    }
+    //event 3
+    document.getElementById("btn").addEventListener("mouseleave",ColorBlack);
+    function ColorBlack(){
+        document.getElementById("coun").style.color="black";
+    }
+    //event 4
+    document.getElementById("res").addEventListener("click",function(){
+    c=0;
+    document.getElementById("coun").innerText=c;
+    });
+
+
+    //-->Remove Event
+    function stop(){
+    document.getElementById("btn").removeEventListener("click",counter);
+}
+    
+    
+
+</script>
+</html>

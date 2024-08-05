@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>JavaScript Functions</title>
+    </head>
+    <body>
+        <div>
+            Enter User Name:<input type="text" name="userName" id="name"/>
+            <br/>
+            <button onclick="login()">
+                Login
+            </button>
+        </div>
+        <div class="greet">
+
+        </div>
+
+    </body>
+    <script type="text/JavaScript">
+        function login() {
+           // alert("You Successfully logged in!");
+           var x=document.getElementById("name").value;
+           if(x=="Talha Malik"){
+            alert("Welcome Admin")
+           }
+           else{
+           alert("Welcome " +x+" Sir");
+           }
+           document.getElementsByClassName("greet")[0].innerHTML="Hello "+x+"!";
+            
+        }
+    </script>
+</html>

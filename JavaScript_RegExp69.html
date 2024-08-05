@@ -1,0 +1,32 @@
+<html >
+<head>
+    <title>RegExp</title>
+</head>
+<body>
+    <h2>Open Console</h2>
+    
+</body>
+<script>
+    //Regular Expressions in Js use for proper patterns like password
+    // having uppercase/lowercase/numbers are mendatory
+    //--->https://regex101.com/ this is website for regular expressions
+    var pattern=/[a-z]+[0-9]+/ig;
+    var str="TalhaMalik123 malik121";
+    console.log(pattern.exec(str));//exec() returns the first matching pattern
+    var str2="hhh";
+    console.log(pattern.test(str2));//returns true/false on basis of matching
+    var pattern2=new RegExp('/[0-9]','i');//new RegExp('pattern','modofier');
+    console.log(pattern2.toString());
+    //using a bana banaya pattern from google
+    //-->this is for password having altleast length of 8 
+    //-->and atleast having a uppercase character,
+    //-->a lower case character,
+    //-->a number and 
+    //-->a special character
+    var pattern3=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()\-+\=\[\]{};':"\\|,.<>\/?])[A-Za-z\d!@#$%^&*()\-+\=\[\]{};':"\\|,.<>\/?]{8,}$/;
+    var str3="Talhama1!";
+    console.log(pattern3.test(str3));
+
+
+</script>
+</html>

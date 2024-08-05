@@ -1,0 +1,47 @@
+<html >
+<head>
+    <title>Animation using JS</title>
+</head>
+<body>
+    <style>
+        #main{
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            position: relative;
+        }
+        #box{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+    </style>
+    <button onclick="Animate()">click me</button>
+    <br/>
+    <br/>
+    <div id="main">
+        <div id="box"></div>
+    </div>
+</body>
+<script>
+    function Animate(){
+        document.getElementById('box').style.top="350px";
+        document.getElementById('box').style.left="350px";
+        document.getElementById('box').style.transition="4s";
+        setTimeout(abc,5000);
+
+        function abc(){
+        if((document.getElementById('box').style.top="350px") && (document.getElementById('box').style.left="350px")){
+        document.getElementById('box').style.top="0px";
+        document.getElementById('box').style.left="0px";
+        document.getElementById('box').style.transition="4s";
+       }}
+       
+        
+    }
+
+</script>
+</html>

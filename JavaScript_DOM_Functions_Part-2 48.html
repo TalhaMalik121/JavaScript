@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            DOM Part2
+        </title>
+    </head>
+    <body>
+     <input type="text" name="name"/>
+     <button name="Submit" onclick="PrintName()">
+        Submit
+     </button>
+     <h1></h1>
+    </body>
+    <script>
+        function PrintName() {
+            var x= document.getElementsByName("name")[0].value;
+            document.getElementsByName("name")[0].value="";
+            document.getElementsByTagName("h1")[0].innerHTML=x;
+        }
+
+    </script>
+</html>

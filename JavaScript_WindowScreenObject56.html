@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Object</title>
+</head>
+<body>
+    <h1>Screen Object Methods</h1>
+<button onclick="AvailHeight()">AvailHeight</button>
+<br/>
+<br/>
+<button onclick="AvailWidth()">AvailWidth</button>
+<br/>
+<br/>
+<button onclick="ColorDepth()">Color Depth</button>
+<br/>
+<br/>
+<button onclick="Height()">Height </button>
+<br/>
+<br/>
+<button onclick="Width()">Width</button>
+<br/>
+<br/>
+<button onclick="PixelDepth()">Pixel Depth</button>
+</body>
+<script>
+    function AvailHeight() {
+        alert(screen.availHeight+"px");//used to get height excluding taskbar
+    }
+    function AvailWidth() {
+        alert(screen.availWidth+"px");//used to get width excluding taskbar
+    }
+    function ColorDepth() {
+        alert(screen.colorDepth+"px");//used to get color depth of user screen 
+    }
+    function Height() {
+        alert(screen.height+"px");//used to get full height of screen inlcuing taskbar
+    }
+    function Width() {
+        alert(screen.width+"px");//used to get  full width including taskbar
+    }
+    function PixelDepth() {
+        alert(screen.pixelDepth+"px");//used to get pixelDepth of user screen
+    }
+
+</script>
+</html>

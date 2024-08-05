@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Page3</title>
+</head>
+<body>
+    <h1></h1>
+    <h2>third</h2>
+    <button onclick="window.history.forward();">Forward</button>
+    <button onclick="window.history.back();">Back</button>
+    <button onclick="window.history.go(2);">Go</button>
+    
+</body>
+<script>
+      var length=window.history.length;
+      document.getElementsByTagName("h1")[0].innerText=length;
+
+</script>
+</html>

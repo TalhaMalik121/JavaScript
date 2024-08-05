@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+          Imp Array Methods  
+        </title>
+    </head>
+    <body>
+        
+    
+    </body>
+    <script type="text/Javascript">
+        //1)valueOf()-->used to print data  of an Array
+        //2)isArray()-->to check if the method is Array or not
+        //3)concat()-->join several Array into 1
+        //4)indexOf()-->return the primitive value of specified object
+        //5)join()-->Combine several elements of an array into a single string and  return the string
+        var arr=["apple","banana","Manago","PineApple"];
+        var flag=Array.isArray(arr);
+        document.write("<h2>"+flag+"<h2/>");
+        var fruits=arr.valueOf();
+        document.write("<h2>"+fruits+"<h2/>");
+        var arr2=["StrawBerry"];
+        var arr4=["BlueBerry"];
+        var arr3=arr.concat(arr2,arr4);
+        document.write("<h2>"+arr3+"<h2/>");
+        var join=arr3.join("!");
+        document.write("<h2>"+join+"<h2/>");//-->join used to get formatted data
+        var index=arr.indexOf("apple");//-->If things nit found it will give the index of -1
+        document.write("<h2>"+index+"<h2/>");
+
+       
+       
+        
+    </script>
+</html>

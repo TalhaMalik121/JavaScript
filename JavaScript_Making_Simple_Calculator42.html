@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <title>
+        Simple Calculator using JS
+    </title>
+</head>
+
+<body>
+    <style type="text/Css">
+        .main{
+                width:500px;
+                background: yellow;
+                margin:auto;/*margin only works when you give some width*/
+
+            }
+            #first
+            {
+                width: 200px;
+                height: 30px;
+            }
+            #second{
+                width: 200px;
+                height: 30px;
+
+            }
+            #operation{
+                width: 50px;
+                height: 30px;
+
+            }
+            #button{
+                width: 200px;
+                height: 30px;
+
+            }
+            #result{
+                width: 200px;
+                height: 30px;
+            }
+        </style>
+    <div class="main">
+        <h2>Simple Calculator Using JavaScript</h2>
+        <input type="number" name="first" id="first" step="any"  />
+        <select id="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="x">x</option>
+            <option value="/">/</option>
+        </select>
+        <input type="number" name="second" id="second" step="any" />
+        <br />
+        <br />
+        <button id="button" onclick="calc()">
+            Calculate
+        </button>
+        <br />
+        <br />
+        Results:<input type="number" name="result" id="result" step="any" />
+        
+    </div>
+
+
+</body>
+<script type="text/JavaScript">
+        function calc(){
+            var first = document.getElementById("first").value;
+            var second=document.getElementById("second").value;
+            var operation=document.getElementById("operation").value;
+            if(operation=="+"){
+                var result=parseInt(first)+parseInt(second);
+                document.getElementById("result").value=result;
+                alert("Results: "+result)
+
+            }
+            if(operation=="-"){
+                var result=parseInt(first)-parseInt(second);
+                document.getElementById("result").value=result;
+                alert("Results: "+result)
+            }
+            if(operation=="x"){
+                var result=parseInt(first)*parseInt(second);
+                document.getElementById("result").value=result;
+                alert("Results: "+result)
+            }
+            if(operation=="/"){
+                var result=parseInt(first)/parseInt(second);
+                document.getElementById("result").value=result;
+                alert("Results: "+result)
+            }
+        }
+    </script>
+
+</html>

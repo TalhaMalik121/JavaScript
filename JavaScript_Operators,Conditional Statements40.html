@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title>JavaScript Operators</title>
+    </head>
+    <body>
+        
+    </body>
+    <script type="text/JavaScript">
+        document.write("<h2>Arithematic Operators + - * / % ++ --</h2>");
+        var a=10;
+        var b=20;
+        var d=a+b;
+        var e=b-a;
+        var f=a*b;
+        var g=b/a;
+        var h=b%a;//modulo operator gives remainder
+        a++;
+        b--;
+        document.write("a="+a+"<br/>");//if you want to use html tags in Javascript write in DoubleQuotes
+        document.write("b="+b+"<br/>");
+        document.write("a+b="+d+"<br/>");
+        document.write("b-a="+e+"<br/>");
+        document.write("a*b="+f+"<br/>");
+        document.write("b/a="+g+"<br/>");
+        document.write("b%a="+h+"<br/>");
+        document.write("a++="+a+"<br/>");
+        document.write("b--="+b+"<br/>");
+
+        document.write("<h2>Comparision Operators != > < <= >= </h2>");
+        var k=10;
+        var l=20;
+        if(k==l){
+            document.write("k==l is true" +"<br/>");
+        }
+        else{
+            document.write("k==l is false" +"<br/>");
+        }
+        if(k!=k){
+            document.write("k!=l is true" +"<br/>");
+        }
+        else{
+            document.write("k!=l is false" +"<br/>");
+        }
+        if(k>l){
+            document.write("k>l is true" +"<br/>"); 
+        }
+        else{
+            document.write("k>l is false" +"<br/>"); 
+        }
+        if(k<l){
+            document.write("k< l is true" +"<br/>"); 
+        }
+        else{
+            document.write("k < l is false" +"<br/>"); 
+        }
+        if(k>=l)
+        {
+            document.write("k>=l is true"+"<br/>");
+        }
+        else{
+            document.write("k>=l is false" +"<br/>"); 
+        }
+        if(k<=l)
+        {
+            document.write("k<=l is true" +"<br/>");
+        }
+        else{
+            document.write("k<=l is false" +"<br/>"); 
+        }
+        
+       
+        document.write("<h2>Logical And Ternary Operators && ||   ternary-->var x= 2>1 ? yes : no</h2>");
+        var alpha=true;
+        var beta=false;
+        document.write("alpha="+alpha+"<br/>");
+        document.write("beta="+beta+"<br/>");
+        if(alpha && beta){
+            document.write("alpha && beta is true" +"<br/>");
+        }
+        else{
+            document.write("alpha && beta is false" +"<br/>");
+        }
+        if(alpha || beta){
+            document.write("alpha || beta is true" +"<br/>");
+        }
+        else{
+            document.write("alpha || beta is false" +"<br/>");
+        }
+        document.write("Ternary Operator... var x= 2>1 ? yes : no "+"<br/>");
+        var x= 2>1 ? "yes" : "no";
+        document.write("is "+x+ "<br/>");
+
+        
+        document.write("<h2>Assignment Operators = +=  -=  *=  /=  %=</h2>");
+        var alpha1=a;
+        document.write("alpha1=a: "+alpha1+"<br/>");
+        var alpha2=0;
+        alpha2+=a;
+        document.write("alpha2+=a: "+alpha2+"<br/>");
+        var alpha3=0;
+        alpha3-=a;
+        document.write("alpha3-=a: "+alpha3+"<br/>");
+        var alpha4=0;
+        alpha4*=a;
+        document.write("alpha4*=a: "+alpha4+"<br/>");
+        var alpha5=2;
+        alpha5/=a;
+        document.write("alpha5/=a: "+alpha5+"<br/>");
+         var alpha6=2;
+        alpha6%=a;
+        document.write("alpha6%=a: "+alpha6);
+
+    </script>
+</html>

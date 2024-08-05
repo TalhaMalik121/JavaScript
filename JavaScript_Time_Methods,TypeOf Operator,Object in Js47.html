@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title> JavaScript Time Methods</title>
+    </head>
+    <body>
+        <h1 id="a1">JavaScript Time Methods</h1>
+        <button onclick="date()">Date</button>
+        <button onclick="GetFullYear()">getFullYear</button>
+        <button onclick="GetMonth()">getMonth</button>
+        <button onclick="GetDate()">getDate</button>
+        <button onclick="GetHours()">getHours</button>
+        <button onclick="GetMinutes()">getMinutes</button>
+        <button onclick="GetSeconds()">getSeconds</button>
+        <button onclick="GetMilliseconds()">getMilliseconds</button>
+        <button onclick="GetTime()">getTime</button>
+        <button onclick="GetDay()">getDay</button>
+    </body>
+    <script>
+        //Date()--->to get current date and time details according to the browser
+        //getFullYear()--->get full year as four digit Number
+        //getMonth()--->get month as number from 0 to 11
+        //getDate()--->get date as number from 1 to 31
+        //getHours()--->get hours as number from 0 to 23
+        //getMinutes()--->get minutes as number from 0 to 59
+        //getSeconds()--->get seconds as number from 0 to 59
+        //getMilliseconds()--->get milliseconds as number from 0 to 999
+        //getTime()--->get time in milliseconds since 1st Jan 1970
+        //getDay()--->get day as number from 0 to 6
+        
+        
+        //setTime()--->set time in milliseconds since 1st Jan 1970
+        //setDate()--->set date as number from 1 to 31
+        //setMonth()--->set month as number from 0 to 11
+        //setFullYear()--->set full year as four digit Number
+        //setHours()--->set hours as number from 0 to 23
+        //setMinutes()--->set minutes as number from 0 to 59
+        //setSeconds()--->set seconds as number from 0 to 59
+        //setMilliseconds()--->set milliseconds as number from 0 to 999
+
+
+
+        //User made functions name must not coincide with builtin functions otherwise nothing works in javaScript
+        
+        function date(){
+             var date = new Date();
+            document.getElementById("a1").innerText=date;
+
+        }
+        function GetFullYear(){
+            var year=new Date().getFullYear();
+            document.getElementById("a1").innerText=year;
+        }
+        function GetMonth(){
+            var months=["January","Feburary","March","April","May","June","July","August","September","October","November","December"];
+            var month = months[new Date().getMonth() + 1];
+            document.getElementById("a1").innerText=month;
+        }
+        function GetDate(){
+
+            var day=new Date().getDate();
+            document.getElementById("a1").innerText=day;
+        }
+        function GetHours(){
+            var hours=new Date().getHours();
+            document.getElementById("a1").innerText=hours;
+
+        }
+        function GetMinutes(){
+            var minutes=new Date().getMinutes();
+            document.getElementById("a1").innerText=minutes;
+
+        }
+        function GetSeconds(){
+            var seconds=new Date().getSeconds();
+            document.getElementById("a1").innerText=seconds;
+
+        }
+        function GetMilliseconds(){
+            var milliseconds=new Date().getMilliseconds();
+            document.getElementById("a1").innerText=milliseconds;
+            
+
+        }
+        function GetTime(){
+            var time=new Date().getTime();
+            document.getElementById("a1").innerText=time;
+
+        }
+        function GetDay(){
+            var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            var day = days[new Date().getDay()];
+            document.getElementById("a1").innerText=day;
+
+        }
+        var name="Talha";
+        document.write("</br>"+typeof(name));
+        var id=1121.1;
+
+        document.write("</br>"+typeof(id));
+        var arr=[];
+        document.write("</br>"+typeof(arr));
+        var condition =true;
+        document.write("</br>"+typeof(condition));
+        //how to make object in JS
+        var a={
+            name:"Talha",
+            age:20,
+            address:"Karachi"
+            
+        };
+        document.write("</br>"+typeof(a));
+
+
+    </script>
+</html>

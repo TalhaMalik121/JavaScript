@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            Get Data Using Prompt Function
+        </title>
+    </head>
+    <body>
+        Name:<i id="name"></i>
+        <br/>
+        Id:<i id="id"></i>
+        <br/>
+        <button id="getname" onclick="getdata()">
+            GetName
+        </button>
+     
+    </body>   
+    <script type="text/JavaScript">
+        function getdata() {
+            var name = prompt("Enter your name: ", "");
+            document.getElementById("name").innerHTML=name;
+            var id = prompt("Enter your id: ", "");
+            document.getElementById("id").innerHTML=id;
+        }
+
+    </script>
+     </html>

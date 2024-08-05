@@ -1,0 +1,42 @@
+<html >
+<head>
+    <title>Print Window</title>
+</head>
+<body id="body">
+    <style>
+        .main{
+            height: 500px;
+            width: 100%;
+            text-align: center;
+            
+        }
+    </style>
+    <div class="main">
+        <h1 id="h1">Comsats Islamabad University,Wah Campus</h1>
+        <center><img src="logo.jpg" alt="image not found" height="150px" width="150px" title="comsats Logo"/></center>
+        <p style="font-size: 20px;" id="p">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit corporis hic harum accusantium obcaecati porro suscipit adipisci voluptatem deserunt tempore tenetur nulla asperiores inventore ut, maiores natus nemo minus ex!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, nostrum. Nemo officia inventore cupiditate distinctio non consequuntur? Molestiae neque nihil excepturi voluptas necessitatibus laboriosam amet, delectus nobis repellat eveniet harum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatibus commodi facere architecto ducimus ipsa sint similique atque quo voluptate possimus nulla expedita incidunt suscipit ea amet, quia non est!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit incidunt ipsam iste recusandae eaque, distinctio molestias officia. Nobis deserunt sit sapiente incidunt hic inventore, accusantium quisquam ipsa possimus, molestias qui.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident molestias id doloribus voluptate consequatur fugit nisi doloremque asperiores aliquam repellat mollitia unde iste deleniti quasi, dignissimos reiciendis itaque? Corporis, consectetur?
+        </p>
+        <center><button onclick="window.print()">Print full Page</button></center>
+        <br/>
+        <center><button onclick="PrintText()">Just Print Text</button></center>
+        
+    </div>
+    
+</body>
+<script>
+    function PrintText() {
+        var body=document.getElementById("body").innerHTML;
+        var a=document.getElementById("h1").innerHTML+"<br/>"+document.getElementById("p").innerHTML;
+        document.getElementById("body").innerHTML=a;
+        window.print();
+        document.getElementById("body").innerHTML=body;
+    
+    }
+
+</script>
+</html>

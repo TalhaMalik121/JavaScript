@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Javascript Array Functions</title>
+    </head>
+    <body>
+        <h2 class="h2"></h2>
+        <button onclick="pop()">POP</button>
+        <button onclick="push()">PUSH</button>
+        <button onclick="reverse()">Reverse</button>
+        <button onclick="shift()">Shift</button>
+        <button onclick="slice()">Slice</button>
+
+    </body>
+    <script>
+         //6)pop()-->remove the last element of array
+        //7)push()-->add a new element to the end
+        //8)reverse()-->sort elements in decending order
+        //9)shift()-->remove the first element of array
+        //10)slice()-->pulls a copy of a portion of an array itno another array
+        var arr=[1,2,3,4,5,6,7,8];
+        document.getElementsByClassName("h2")[0].innerHTML=arr;
+        function pop(){
+            arr.pop();
+            document.getElementsByClassName("h2")[0].innerHTML=arr;
+
+        }function push(){
+           var x= prompt("Enter the Number you want to add in array");
+            arr.push(x);
+            document.getElementsByClassName("h2")[0].innerHTML=arr;
+
+        }
+        function reverse(){
+            arr.reverse();
+            document.getElementsByClassName("h2")[0].innerHTML=arr;
+        }
+        function shift(){
+            var arr3=arr.shift();
+            document.getElementsByClassName("h2")[0].innerHTML=arr3;
+
+        }
+        function slice(){
+          var arr2= arr.slice(2,5);
+            document.getElementsByClassName("h2")[0].innerHTML=arr2;
+        }
+
+
+    </script>
+</html>

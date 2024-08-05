@@ -1,0 +1,41 @@
+<html >
+<head>
+ 
+    <title>ClearInterval Method</title>
+</head>
+<body>
+    <style>
+        #s{
+            text-align: center;
+            
+        }
+    </style>
+    <h1 id="s"></h1>
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+    <button onclick="reset()">Reset</button>
+    
+</body>
+<script>
+    var c=0;
+    var ab=setInterval(count,1000);
+    function count(){
+        
+        document.getElementById("s").innerText=c;
+        c++;
+    }
+    function start(){
+        ab=setInterval(count,1000);
+        c++;
+    }
+    function stop(){
+        clearInterval(ab);
+    }
+    function reset(){
+        c=0;
+        document.getElementById("s").innerText=c;
+        clearInterval(ab);
+        
+    }
+</script>
+</html>

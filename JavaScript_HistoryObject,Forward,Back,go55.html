@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Forward,Back,go</title>
+</head>
+<body>
+    <h1></h1>
+    <h2>First</h2>
+    <button onclick="window.history.forward();">Forward</button>
+    <button onclick="window.history.back();">Back</button>
+    <button onclick="window.history.go(2);">Go</button><!--go is used to go on any page directly-->
+    <!-- 0 to go on first pgae
+     1 to go on second page
+     2 to go on third page
+     3 to go on fourth page
+    -->
+    
+</body>
+<script>
+    var length=window.history.length;
+    document.getElementsByTagName("h1")[0].innerText=length;
+
+</script>
+</html>

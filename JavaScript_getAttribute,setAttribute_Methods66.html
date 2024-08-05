@@ -1,0 +1,32 @@
+<html >
+<head>
+    <title>SetAttribute GetAttribute Methods</title>
+</head>
+<body>
+    <style>
+        .red{
+            color: red;
+        }
+        .blue{
+            color: blue;
+        }
+    </style>
+    <h1 id="121" class="red">Hello everyone!</h1>
+    <button onclick="testing()">Testing</button>
+</body>
+<script>
+    function testing(){
+        
+        var x=document.getElementById("121").getAttribute("class");
+        if(x=="red"){
+            document.getElementById("121").setAttribute("class","blue");
+        }
+        var y=document.getElementById("121").getAttribute("class");
+        if(x=="blue")
+        {
+            document.getElementById("121").setAttribute("class","red");
+        }
+    }
+
+</script>
+</html>

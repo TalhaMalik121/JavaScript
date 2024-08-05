@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Math Object Methods(output on console)</h1>
+    <br/>
+    <button onclick="MathPi()">Math Pi</button>
+    <br/>
+    <br/>
+    <button onclick="MathRound()">Math Round</button>
+    <br/>
+    <br/>
+    <button onclick="MathPow()">Math Pow</button>
+    <br/>
+    <br/>
+    <button onclick="MathSqrt()">Math Sqrt</button>
+    <br/>
+    <br/>
+    <button onclick="MathAbs()">Math abs</button>
+    <br/>
+    <br/>
+    <button onclick="MathCeil()">Math Ceil</button>
+    <br/>
+    <br/>
+    <button onclick="MathFloor()">Math Floor</button>
+    <br/>
+    <br/>
+    <button onclick="MathMin()">Math Min</button>
+    <br/>
+    <br/>
+    <button onclick="MathMax()">Math Max</button>
+    <br/>
+    <br/>
+    <button onclick="MathRandom()">Math Random</button>
+    <br/>
+    <br/>
+    <button onclick="Otp()">Get Otp</button>
+    
+
+
+</body>
+<script>
+    function MathPi() {
+        console.log(Math.PI);//display pi ki value
+    }
+    function MathRound() {
+        console.log(Math.round(1.4));//round off krta hy
+    }
+    function MathPow() {
+        console.log(Math.pow(3, 3)); //2 ki power 3,can br used for taking square
+    }
+    function MathSqrt() {
+        console.log(Math.sqrt(9));//underRoot leta hy
+    }
+    function MathAbs() {
+        console.log(Math.abs(-1));//return the positive value
+    }
+    function MathCeil() {
+        console.log(Math.ceil(1.4));//round to up integer
+    }
+    function MathFloor() {
+        console.log(Math.floor(1.6));//round to down integer
+    }
+    function MathMin() {
+        console.log(Math.min(1, 2, 3, 4, 5,10));//tell the smaller no in tis sequence
+    }
+    function MathMax() {
+        console.log(Math.max(1, 2, 3, 4, 5,10));//tell the larger no in this sequence
+    }
+    function MathRandom() {
+        console.log(Math.random());//generate a random decimal btw 0 and 1
+    }
+    function Otp() {
+        var otp = Math.floor(Math.random()*10000);
+        alert("Otp Is: "+otp)
+    }
+
+    
+</script>
+</html>

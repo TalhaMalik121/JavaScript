@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use Of this Keyword</title>
+</head>
+<body>
+    <h1></h1>
+    <br/>
+    <button onclick="hideName();hideMe(this)">Click me to Hide</button>
+    
+</body>
+<script>
+    var a={
+        name:"Muhammad Talha",//attribute
+        age:20,
+        rollNo:"SP23-Bcs-063-4B",
+        information: function(){
+            //this is not an attribute this is a function named infomration
+            document.getElementsByTagName("h1")[0].innerText=this.name+" "+this.rollNo;
+
+        }
+    };
+    a.information();
+    function hideName(){
+        document.getElementsByTagName("h1")[0].innerText="";
+    }
+    function hideMe(elem){
+        elem.style.display="none"; 
+        document.write("<h2>Both Name and Buttons are Removed by use of this keyword<h2/>");
+        alert(this);// when you use only this inside a function this refers to 
+        //global object of javaScript i.e window
+        
+    }
+</script>
+</html>

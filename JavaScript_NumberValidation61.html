@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Phone Number Validation</title>
+</head>
+<body>
+    <label>Enter Phone Number:</label>
+    <br/>
+    <input type="text" onkeyup="valida(this)"/><!--onkeyup means we you enter some input in input box-->
+    <div id="res"  style="color: red;"></div>
+    
+    
+</body>
+<script>
+    function valida(elem) {
+        if(isNaN(elem.value)){//isNaN stands for is  Not A Number
+            document.getElementById("res").innerHTML="Please enter number only";
+        }
+        else{
+            document.getElementById("res").innerHTML="";
+              if(elem.value.length>10){
+            document.getElementById("res").innerHTML="Please enter 10 digit number";
+        }
+        else{
+            document.getElementById("res").innerHTML="";
+        }
+        }
+      
+    }
+</script>
+</html>

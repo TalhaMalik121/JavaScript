@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Modify Css On Events using JavaScript</title>
+    </head>
+    <body>
+        <style>
+            #alpha{
+                color: red;
+                font-size: 50px;
+                text-align: center;
+                margin: auto;
+                transition: 2s;
+            }
+         
+        </style>
+        <div id="alpha" onmouseenter="modify()" onmouseleave="unmodify()">
+            WsCube Tech
+        </div>
+    </body>
+    <script>
+        function modify() {
+            document.getElementById("alpha").style.fontSize="100px";
+            document.getElementById("alpha").style.fontFamily="verdana";
+            document.getElementById("alpha").style.color="blue";
+        }
+        function unmodify(){
+            document.getElementById("alpha").style.fontSize="50px";
+            document.getElementById("alpha").style.fontFamily="";
+            document.getElementById("alpha").style.color="red";
+        }
+
+    </script>
+</html>
